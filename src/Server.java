@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -63,13 +60,16 @@ public class Server {
     }
     public void chiudi(){
         try {
-            if(socket != null) socket.close();
-        } catch (IOException e) {}
+            socket.close();
+        } catch (IOException e) {
+            System.err.println("Errore nella chiusura del socket dei dati");
+        }
     }
     public void termina(){
         try {
-            if(serverSocket != null) serverSocket.close();
+           serverSocket.close();
+        } catch (IOException e) {
             System.out.println("Server terminato");
-        } catch (IOException e) {}
+        }
     }
 }
