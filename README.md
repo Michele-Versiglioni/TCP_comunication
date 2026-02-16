@@ -1,5 +1,4 @@
-# Titolo
-Esercitazione C/S TCP Java
+# Esercitazione C/S TCP Java
 
 # Descrizione
 Questo progetto implementa una comunicazione TCP tra un client e un server in Java.
