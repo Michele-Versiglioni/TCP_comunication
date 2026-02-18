@@ -15,6 +15,7 @@ public class MainServerParallelo {
                 GestoreClient gc = new GestoreClient(socket);
                 gc.start(); //PARTE IL THREAD
             }
+
         } catch (Exception e ) {
             System.out.println("ERRORE SERVER PARALLELO: " + e.getMessage());
         }

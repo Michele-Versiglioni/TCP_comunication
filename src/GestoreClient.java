@@ -28,6 +28,7 @@ public class GestoreClient extends Thread {
             }
             socket.close(); //CHIUSURA SOCKET CLIENT
             System.out.println("CLIENT CHIUSO: " + socket);
+
         } catch (IOException e) {
             System.out.println("ERRORE THREAD CLIENT: " + e.getMessage());
         }
