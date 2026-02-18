@@ -11,8 +11,10 @@ public class MainServer {
             // MULTI CLIENT NON CONTEMPORANEO
             while (true) {
 
+                // CONNESSIONE CON IL CLIENT
                 server.attendi();
 
+                // CICLO PER SCAMBIARE PIU' MESSAGGI
                 while (true) {
 
                     String richiesta = server.leggi();
