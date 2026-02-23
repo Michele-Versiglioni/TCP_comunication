@@ -34,6 +34,7 @@ public class Client {
      * @param portaServer porta su cui il server è in ascolto
      * @return 0 se la connessione è riuscita, -1/-2 in caso di errore
      */
+
     public int connetti(String nomeServer, int portaServer) {
         try {
             socket = new Socket(nomeServer, portaServer);
