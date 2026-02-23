@@ -6,6 +6,7 @@ import java.net.Socket;
  */
 public class MainServerParallelo {
     public static void main(String[] args) {
+
         try {
             // Creazione del server socket
             ServerSocket serverSocket = new ServerSocket(3241);
